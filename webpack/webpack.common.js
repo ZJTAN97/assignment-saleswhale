@@ -5,6 +5,7 @@ module.exports = {
     entry: path.resolve(__dirname, "..", "./src/index.tsx"),
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
+        modules: ["src", "node_modules"]
     },
     module: {
         rules: [
@@ -19,7 +20,7 @@ module.exports = {
             },
             // for css
             {
-                test: /\.css$/,
+                test: /\.module\.s(a|c)ss$/,
                 use: [
                     "style-loader",
                     {
@@ -28,6 +29,9 @@ module.exports = {
                             importLoaders: 1,
                             modules: true,
                         }
+                    },
+                    {
+                        loader: "sass-loader",
                     }
                 ],
             },
