@@ -18,7 +18,20 @@ module.exports = {
                     },
                 ],
             },
-            // for css
+            // TypeScript
+            {
+                test: /\.ts(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                  {
+                    loader: 'ts-loader',
+                    options: {
+                        transpileOnly: true,
+                    }
+                  }
+                ]
+            },
+            // for css and scss
             {
                 test: /\.module\.s(a|c)ss$/,
                 use: [
@@ -34,6 +47,11 @@ module.exports = {
                         loader: "sass-loader",
                     }
                 ],
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+                exclude: /\.module\.css$/,
             },
             // for images
             {
