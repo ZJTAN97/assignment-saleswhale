@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div>
       {sample}
-      <h1>SalesWhales</h1>
+      <h1>SalesWhales!!</h1>
     </div>
   );
 };
