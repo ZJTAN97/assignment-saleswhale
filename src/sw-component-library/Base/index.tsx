@@ -6,7 +6,7 @@ export const Base = () => {
   return (
     <div className={styles.container}>
       <LeftNavBar />
-      <TopNavBar className={"test"} />
+      <TopNavBar />
     </div>
   );
 };

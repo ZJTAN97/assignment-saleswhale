@@ -1,14 +1,19 @@
 import styles from "./styles.module.scss";
+import { User } from "./Icons/User";
+import { Notification } from "./Icons/Notification";
 
-interface TopNavBarProps {
-  className: string;
-}
-
-export const TopNavBar: React.FC<TopNavBarProps> = ({}) => {
+export const TopNavBar: React.FC = ({}) => {
   return (
     <div className={styles.container}>
-      <div>NARWHAL</div>
-      <div>Teams</div>
+      <div className={styles.header__container}>
+        <div className={styles.header}>NARWHAL</div>
+        <div className={styles.header__selected}>Teams</div>
+      </div>
+      <div className={styles.user__container}>
+        <Notification className={styles.notification} />
+        <div className={styles.user__name}>Hello John</div>
+        <User className={styles.profile__pict} />
+      </div>
     </div>
   );
 };

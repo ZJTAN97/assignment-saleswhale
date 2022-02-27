@@ -22,14 +22,7 @@ module.exports = {
             {
                 test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                use: [
-                  {
-                    loader: 'ts-loader',
-                    options: {
-                        transpileOnly: true,
-                    }
-                  }
-                ]
+                use: 'ts-loader',   
             },
             // for css and scss
             {
