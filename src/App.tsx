@@ -1,12 +1,16 @@
-import "./styles.css";
+import { Button } from "./components/Button/Button";
+import styles from "./styles.module.css";
 
 export const App = () => {
-  const sample = "Testing github pre-commit hook";
+  console.log("hello world!");
 
   return (
     <div>
-      {sample}
-      <h1>SalesWhales!!</h1>
+      <div className={styles.sampleDiv}>
+        <h1>SalesWhales!!</h1>
+      </div>
+
+      <Button />
     </div>
   );
 };

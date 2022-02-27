@@ -5,7 +5,7 @@ module.exports = {
     devtool: "cheap-module-source-map",
     plugins: [
         new webpack.DefinePlugin({
-            "process.env.name": JSON.stringify("Docker"),
+            "process.env.name": JSON.stringify("development_api"),
         })
     ]
 }
