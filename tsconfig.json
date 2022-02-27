@@ -18,7 +18,8 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true,
   },
-  "include": ["src/*/*", "declaration.d.ts"]
+  "include": ["src", "declaration.d.ts"]
 }

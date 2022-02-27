@@ -2,11 +2,18 @@ import { LeftNavBar } from "./LeftNavBar";
 import styles from "./styles.module.scss";
 import { TopNavBar } from "./TopNavBar";
 
-export const Base = () => {
+interface BaseProps {
+  children?: React.ReactNode;
+}
+
+export const Base: React.FC<BaseProps> = ({ children }) => {
   return (
     <div className={styles.container}>
       <LeftNavBar />
-      <TopNavBar />
+      <div className={styles.main__content}>
+        <TopNavBar />
+        {children}
+      </div>
     </div>
   );
 };
