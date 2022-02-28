@@ -1,0 +1,31 @@
+.container {
+  max-width: 307px;
+  border: solid 1px #e4e7ec;
+  border-radius: 4px;
+}
+.row {
+  display: flex;
+  padding: 18px 16px 16px 16px;
+}
+.business__logo {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.description {
+  color: #565656;
+  padding: 0px 16px 16px 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 24px;
+}
+.campaign__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  border-top: solid 1px #e4e7ec;
+  padding: 17px;
+}
